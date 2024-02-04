@@ -1,1 +1,22 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.NamespaceTemplate = exports.MethodTemplate = exports.FieldTemplate = exports.ClassTemplate = exports.NamespaceDefinition = exports.MethodDefinition = exports.FieldDefinition = exports.ClassDefinition = void 0;
+const class_1 = __importDefault(require("./definition/class"));
+exports.ClassDefinition = class_1.default;
+const field_1 = __importDefault(require("./definition/field"));
+exports.FieldDefinition = field_1.default;
+const method_1 = __importDefault(require("./definition/method"));
+exports.MethodDefinition = method_1.default;
+const namespace_1 = __importDefault(require("./definition/namespace"));
+exports.NamespaceDefinition = namespace_1.default;
+const class_2 = __importDefault(require("./template/class"));
+exports.ClassTemplate = class_2.default;
+const field_2 = __importDefault(require("./template/field"));
+exports.FieldTemplate = field_2.default;
+const method_2 = __importDefault(require("./template/method"));
+exports.MethodTemplate = method_2.default;
+const namespace_2 = __importDefault(require("./template/namespace"));
+exports.NamespaceTemplate = namespace_2.default;
